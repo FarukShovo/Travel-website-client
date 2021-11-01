@@ -8,14 +8,15 @@ const Services = () => {
   return (
     <section style={{ marginTop: 50 }} class="services" id="services">
       <h1 class="heading">
-        <span>s</span>
-        <span>e</span>
-        <span>r</span>
-        <span>v</span>
-        <span>i</span>
-        <span>c</span>
-        <span>e</span>
-        <span>s</span>
+        <span>w</span>
+        <span>E</span>
+        <span> </span>
+        <span>O</span>
+        <span>F</span>
+        <span>F</span>
+        <span>E</span>
+        <span>R</span>
+        <span>S</span>
       </h1>
 
       <div class="box-container">
@@ -23,7 +24,7 @@ const Services = () => {
           <i class="fas fa-hotel">
             <FaHotel></FaHotel>
           </i>
-          <h3>affordable hotels</h3>
+          <h3>hotels</h3>
           <p>
             A hotel is an establishment that provides paid lodging on a
             short-term basis. Facilities provided inside a hotel room may range
@@ -34,7 +35,7 @@ const Services = () => {
           <i class="fas fa-utensils">
             <FaUtensils></FaUtensils>
           </i>
-          <h3>food and drinks</h3>
+          <h3>food </h3>
           <p>
             A drink is a liquid intended for human consumption. In addition to
             their basic function of satisfying thirst, drinks play important
@@ -45,7 +46,7 @@ const Services = () => {
           <i class="fas fa-bullhorn">
             <MdSafetyDivider></MdSafetyDivider>
           </i>
-          <h3>safety guide</h3>
+          <h3>safety guidence</h3>
           <p>
             Safety is the state of being "safe", the condition of being
             protected from harm or other danger. Safety can also refer to the
@@ -57,7 +58,7 @@ const Services = () => {
             {" "}
             <BiWorld></BiWorld>
           </i>
-          <h3>around the world</h3>
+          <h3>world tour</h3>
           <p>
             In its most general sense, the term "world" refers to the totality
             of entities, the world has been conceptualized differently in
@@ -68,7 +69,7 @@ const Services = () => {
           <i class="fas fa-plane">
             <FaPlane></FaPlane>
           </i>
-          <h3>fastest travel</h3>
+          <h3>fastest & safest travel</h3>
           <p>
             Travel is the movement of people between distant geographical
             locations. Travel can be done by foot, bicycle, automobile, train,

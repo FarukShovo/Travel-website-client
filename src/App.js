@@ -18,59 +18,62 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Details from "./components/Details/Details";
 import MyOrder from "./components/MyOrder/MyOrder";
 import ManageServices from "./components/ManageServices/ManageServices";
+import AuthProvider from "./Context/AuthProvider";
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
+    <AuthProvider>
+      <div>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
 
-          <Route exact path="/packages">
-            <Packages></Packages>
-          </Route>
-          <Route exact path="/services">
-            <Services></Services>
-          </Route>
-          <Route exact path="/gallery">
-            <Gallery></Gallery>
-          </Route>
-          <Route exact path="/booking">
-            <Booking></Booking>
-          </Route>
-          <Route exact path="/myOrder">
-            <MyOrder></MyOrder>
-          </Route>
+            <Route exact path="/packages">
+              <Packages></Packages>
+            </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <Route exact path="/gallery">
+              <Gallery></Gallery>
+            </Route>
+            <Route exact path="/booking">
+              <Booking></Booking>
+            </Route>
+            <Route exact path="/myOrder">
+              <MyOrder></MyOrder>
+            </Route>
 
-          <Route exact path="/review">
-            <Review></Review>
-          </Route>
-          <Route exact path="/manageServices">
-            <ManageServices></ManageServices>
-          </Route>
-          <Route exact path="/addService">
-            <AddService></AddService>{" "}
-          </Route>
-          <PrivateRoute path="/placeorder">
-            <PlaceOrder></PlaceOrder>
-          </PrivateRoute>
-          <Route exact path="/login">
-            <Login></Login>
-          </Route>
-          {/* <Route exact path="/signup"></Route> */}
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
-    </div>
+            <Route exact path="/review">
+              <Review></Review>
+            </Route>
+            <Route path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
+            <Route exact path="/addService">
+              <AddService></AddService>
+            </Route>
+            <Route path="/placeorder/:id">
+              <PlaceOrder></PlaceOrder>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            {/* <Route exact path="/signup"></Route> */}
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </div>
+    </AuthProvider>
   );
 }
 

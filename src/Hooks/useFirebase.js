@@ -19,15 +19,18 @@ const useFirebase = () => {
   const provider = new GoogleAuthProvider();
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   //Google Sign in button
 
   const handleGoogleLogin = (from) => {
+    setIsLoading(true);
     return signInWithPopup(auth, provider)
       .then((result) => {
         setUser(result.user);
         // console.log(result.user);
         setError("");
+        setIsLoading(false);
       })
       .catch((error) => setError(error.message));
   };
@@ -87,6 +90,7 @@ const useFirebase = () => {
     handleLogout,
     handleUserRegister,
     handleUserLogin,
+    isLoading, setIsLoading
   };
 };
 

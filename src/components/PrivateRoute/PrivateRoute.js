@@ -1,27 +1,33 @@
-import React from "react";
-import { Redirect, Route } from "react-router-dom";
-import useFirebase from "../../Hooks/useFirebase";
+import React from 'react';
+import { Redirect, Route } from 'react-router';
+import useAuth from '../../Hooks/useAuth';
 
-function PrivateRoute(props) {
-  // console.log(props);
-  const { children, ...rest } = props;
-  const { user } = useFirebase();
+const PrivateRoute = ({ children, ...rest }) => {
+  const { user, isLoading } = useAuth();
+
+  if (isLoading) {
+
+    return <div className="container">Loading.....</div>
+  }
   return (
-    <Route
+
+    < Route
       {...rest}
       render={({ location }) =>
-        user.email ? (
+        user?.email ? (
           children
         ) : (
           <Redirect
             to={{
               pathname: "/login",
-              state: { from: location },
+              state: { from: location }
             }}
           />
         )
       }
     />
   );
-}
+};
+
+
 export default PrivateRoute;

@@ -6,33 +6,26 @@ import Services from "../Services/Services";
 import "./Home.css";
 const Home = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url("https://image.freepik.com/free-photo/woman-with-hat-sitting-chairs-beach-beautiful-tropical-beach-woman-relaxing-tropical-beach-koh-nangyuan-island_335224-1111.jpg")`
+      }}
+      className="home-bg"
+
+    >
       <section className="home" id="home">
         <div className="content">
-          <h3>Where the journey begins!</h3>
-          <p>
-            No matter where you're going from, we take you there just at a
-            glimpse
+          <h3 className="text-dark">Travel the world!</h3>
+          <p className="text-success fw-bold">
+            No matter where you're going to start && where you're going to stop!
           </p>
-          <Link to="#" className="btn">
-            discover more
-          </Link>
-        </div>
 
-        <div className="video-container">
-          <video
-            src="images/vid-1.mp4"
-            id="video-slider"
-            loop
-            autoplay
-            muted
-          ></video>
         </div>
       </section>
       <Packages></Packages>
       <Services></Services>
       <Gallery></Gallery>
-    </div>
+    </div >
   );
 };
 

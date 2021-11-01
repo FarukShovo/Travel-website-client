@@ -5,7 +5,7 @@ const NotFound = () => {
     <div>
       <img
         className="img-NotFound"
-        src="https://pbs.twimg.com/media/EOvhLDJU4AE5ZlH.jpg"
+        src="https://cdn1.vectorstock.com/i/1000x1000/77/15/404-error-page-not-found-plug-graphic-background-vector-21467715.jpg"
         alt=""
       />
     </div>

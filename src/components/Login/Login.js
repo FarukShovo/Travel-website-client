@@ -8,7 +8,7 @@ const Login = () => {
   let history = useHistory();
   let location = useLocation();
   let { from } = location.state || { from: { pathname: "/" } };
-
+  console.log("Login")
   const redirect = () => {
     return user.email ? history.replace(from) : null;
   };

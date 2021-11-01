@@ -14,7 +14,7 @@ const Header = () => {
       </div>
 
       <Link to="/" className="logo">
-        <span>T</span>ravelogue
+        <span>QUNAR </span> 去那儿
       </Link>
 
       <nav className="navbar">
@@ -23,6 +23,7 @@ const Header = () => {
         <Link to="/placeOrder">PlaceOrder</Link>
         <Link to="/manageServices">Manage Services</Link>
         <Link to="/addService">Add Service</Link>
+        <Link to="/review">Reviews</Link>
 
         {user.email ? (
           <button onClick={handleLogout} className="btn btn-primary">
