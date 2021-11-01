@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 const ManageServices = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
-    fetch("https://chilling-demon-70491.herokuapp.com/places")
+    fetch("https://cryptic-plains-76285.herokuapp.com/places")
       .then((res) => res.json())
       .then((data) => setPlaces(data));
   }, []);
   const handleDelete = (id) => {
-    const url = `https://chilling-demon-70491.herokuapp.com/places/${id}`;
+    const url = `https://cryptic-plains-76285.herokuapp.com/places/${id}`;
     fetch(url, {
       method: "DELETE",
     })

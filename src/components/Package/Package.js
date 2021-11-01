@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Package.css";
 
@@ -15,7 +16,9 @@ const Package = (props) => {
           <h5>Description:{description}</h5>
           <h5>Price:{price}</h5>
 
-          <button className="btn btn-primary">Details</button>
+          <Link to="/placeorder"><button className="btn btn-warning">Book now</button></Link>
+
+
         </div>
       </div>
     </div>

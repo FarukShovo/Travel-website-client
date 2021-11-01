@@ -5,7 +5,7 @@ import Package from "../Package/Package";
 const Packages = () => {
   const [packages, setPackages] = useState([]);
   useEffect(() => {
-    fetch("https://chilling-demon-70491.herokuapp.com/places")
+    fetch("https://cryptic-plains-76285.herokuapp.com/places")
       .then((res) => res.json())
       .then((data) => setPackages(data));
   }, []);

@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCOKD4v3UP9R9VNGSdyt4X_XTOKKTcJj-w",
-  authDomain: "tour-guide-d1e51.firebaseapp.com",
-  projectId: "tour-guide-d1e51",
-  storageBucket: "tour-guide-d1e51.appspot.com",
-  messagingSenderId: "816823613672",
-  appId: "1:816823613672:web:1baf8470f69de57921b15d",
+  apiKey: "AIzaSyD5UvFjrQGGlhHuPgaflzKZ70qPtOY_bWc",
+  authDomain: "my-travel-site-c9e7a.firebaseapp.com",
+  projectId: "my-travel-site-c9e7a",
+  storageBucket: "my-travel-site-c9e7a.appspot.com",
+  messagingSenderId: "147996610211",
+  appId: "1:147996610211:web:1ddf375da518e0f0783916"
 };
 export default firebaseConfig;

@@ -7,7 +7,7 @@ const AddService = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://chilling-demon-70491.herokuapp.com/places", data)
+      .post("https://cryptic-plains-76285.herokuapp.com/places", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("added successfully");
